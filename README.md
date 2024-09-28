@@ -24,6 +24,8 @@ gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-
 
 gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
 
+gobuster dns -w word.txt -d hilton.com -i (брут по днс)
+
 
 ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -fs 7069
 
