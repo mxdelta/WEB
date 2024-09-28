@@ -1,3 +1,14 @@
+# Разведка поддоменов
+    
+    - через DNS
+    
+    subfinder -d hilton.com
+    
+    sublist3r -d hilton.com
+
+
+
+
 # WEB
 
 Web Shell
