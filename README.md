@@ -68,3 +68,8 @@ nikto -url http://10.10.217.189/
 Web Shell
 
 https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
+
+# словарик для бурпа - к примеру заголовки
+
+	https://github.com/PortSwigger/param-miner/tree/master
+ 
