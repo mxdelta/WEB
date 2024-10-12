@@ -5,7 +5,8 @@
     subfinder -d hilton.com
     
     sublist3r -d hilton.com
-    
+	--- Поиск доменов по ip
+    https://dnsdumpster.com/
 # Брут директрий и доменов
 
 Основной словарик каталогов
