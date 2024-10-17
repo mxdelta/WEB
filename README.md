@@ -1,5 +1,8 @@
 # Разведка поддоменов из свободных ресурсов
-    
+	
+ ФОТОН
+    https://spy-soft.net/photon-web-crawler-osint/
+
     - через DNS
     
     subfinder -d hilton.com
