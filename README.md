@@ -76,4 +76,8 @@ https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
 # словарик для бурпа - к примеру заголовки
 
 	https://github.com/PortSwigger/param-miner/tree/master
- 
+
+ # Смена IP при запрсе 
+
+ 	X-Forwarded-For: 1
+  
