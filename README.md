@@ -10,6 +10,11 @@
     sublist3r -d hilton.com
 	--- Поиск доменов по ip
     https://dnsdumpster.com/
+
+# Поиск ссылок из адреса или домена
+
+	xurlfind3r -d av.ru -o results
+
 # Брут директрий и доменов
 
 Основной словарик каталогов
