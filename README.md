@@ -85,7 +85,9 @@ nikto -url http://10.10.217.189/
 	sudo apt install trufflehog 
 
  	TruffleHog filesystem <название директории>
-  
+
+  	trufflehog git <ссылка на репозиторий> --only-verified
+   
 
 # Web Shell
 
