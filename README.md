@@ -71,6 +71,21 @@ wfuzz -u http://11.11.11.11/centrion/api/index.php?action=autenticate -d ‘user
 
 nikto -url http://10.10.217.189/
 
+# Веб-скрейпинг
+	Поиск скриптов JScript на страницах
+	
+ 	go install github.com/003random/getJS/v2@latest
+	# добавление в PATH, если раньше не добавлял
+	echo "export PATH=\"$HOME/go/bin:\$PATH\"" >> ~/.zshrc
+	source ~/.zshrc
+ 
+	getJS --url <URL>
+
+# TruffleHog — автоматизируем поиск в коде
+	sudo apt install trufflehog 
+
+ 	TruffleHog filesystem <название директории>
+  
 
 # WEB
 
