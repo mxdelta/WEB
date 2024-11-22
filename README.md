@@ -87,9 +87,7 @@ nikto -url http://10.10.217.189/
  	TruffleHog filesystem <название директории>
   
 
-# WEB
-
-Web Shell
+# Web Shell
 
 https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
 
