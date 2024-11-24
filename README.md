@@ -20,16 +20,15 @@
 
 # Разведка поддоменов перебором
 
-gobuster dns -w word.txt -d hilton.com -i (брут по днс)
+	gobuster dns -w word.txt -d hilton.com -i (брут по днс)
 
 # Сортировка повторов
 
-sort dns_names.txt | uniq
+	sort dns_names.txt | uniq
 
 # Поиск живых поддоменов
 
  	httpx -status-code -tech-detect -list all_subdomains_example.com
-
 
 # Поиск ссылок из адреса или домена
 
@@ -37,9 +36,17 @@ sort dns_names.txt | uniq
 
 # Брут директрий и доменов
 
-gobuster dns -w word.txt -d hilton.com -i (брут по днс)
+	gobuster dns -w word.txt -d hilton.com -i (брут по днс)
 
-Основной словарик каталогов
+# Пасивный поиск портов на хосте
+
+	https://search.censys.io/
+ 
+# Активный поиск - конечно же nmap
+
+ 	nmap -sCV ....
+ 
+# Основной словарик каталогов
 
 https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
 
