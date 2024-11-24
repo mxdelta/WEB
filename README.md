@@ -14,6 +14,10 @@
  	--- Поиск доменов по ip
     https://dnsdumpster.com/
 
+	amass enum -passive -d example.com (пассивный режим)
+
+	amass enum -d example.com (активный режим)
+ 	
 sort dns_names.txt | uniq
 
 
