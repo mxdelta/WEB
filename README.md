@@ -59,6 +59,14 @@
 
   	gobuster dir -u http://192.168.50.13 -w /usr/share/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -e -k -x txt,html,php,css,js,sh,py,cgi,db -t 50
 
+# Анализируем доступные фрагменты кода
+
+	getJS --url https://example.com --verbose    ---> cnzubdftv afqks yf lbcr ----> (ищем секреты)  trufflehog filesystem path_with_source_code
+
+# Параметры запросов
+
+	arjun -u https://example.com/some_path/any_page.php
+
 # Основной словарик каталогов
 
 https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
