@@ -47,6 +47,18 @@
  	nmap -sCV example.com
 	nmap -sS -T4 -sV example.com
  
+# Идентификация технологий ВЕБ
+
+	whatweb any_subdomain.example.com
+
+# Ищем скрытые файлы и директории
+
+	xurlfind3r -d any_subdomains.example.com -o dirs_any_subdomains.example.com
+
+ 	ffuf -w <путь к словарю>:FUZZ -u http://any_subdomains.example.com/FUZZ 
+
+  	gobuster dir -u http://192.168.50.13 -w /usr/share/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -e -k -x txt,html,php,css,js,sh,py,cgi,db -t 50
+
 # Основной словарик каталогов
 
 https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
@@ -54,8 +66,6 @@ https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
 утилиты
 
 wpscan --url://192.168.50.200/wordpress/ --wp-content-dir -at -eu  (все директории и все плагины для вордпресс)
-
-gobuster dir -u http://192.168.50.13 -w /usr/share/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -e -k -x txt,html,php,css,js,sh,py,cgi,db -t 50
 
 gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k -u https://watch.streamio.htb/ -x php
 
