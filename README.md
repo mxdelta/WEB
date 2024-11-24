@@ -44,7 +44,8 @@
  
 # Активный поиск - конечно же nmap
 
- 	nmap -sCV ....
+ 	nmap -sCV example.com
+	nmap -sS -T4 -sV example.com
  
 # Основной словарик каталогов
 
