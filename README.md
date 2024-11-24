@@ -17,8 +17,18 @@
 	amass enum -passive -d example.com (пассивный режим)
 
 	amass enum -d example.com (активный режим)
- 	
+
+# Разведка поддоменов перебором
+
+gobuster dns -w word.txt -d hilton.com -i (брут по днс)
+
+# Сортировка повторов
+
 sort dns_names.txt | uniq
+
+# Поиск живых поддоменов
+
+ 	httpx -status-code -tech-detect -list all_subdomains_example.com
 
 
 # Поиск ссылок из адреса или домена
