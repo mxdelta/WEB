@@ -66,6 +66,9 @@
 # Параметры запросов
 
 	arjun -u https://example.com/some_path/any_page.php
+# Сканеры уязвимостей 
+
+nuclei -u https://example.com -o nuclei_results_example.com
 
 # Основной словарик каталогов
 
