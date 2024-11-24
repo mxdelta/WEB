@@ -14,7 +14,7 @@
  	--- Поиск доменов по ip
     https://dnsdumpster.com/
 
--uniq -sort
+sort dns_names.txt | uniq
 
 
 # Поиск ссылок из адреса или домена
