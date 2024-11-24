@@ -27,6 +27,8 @@ sort dns_names.txt | uniq
 
 # Брут директрий и доменов
 
+gobuster dns -w word.txt -d hilton.com -i (брут по днс)
+
 Основной словарик каталогов
 
 https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
@@ -42,9 +44,6 @@ gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k 
 gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10 -x php,html,bak,txt
 
 gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
-
-gobuster dns -w word.txt -d hilton.com -i (брут по днс)
-
 
 ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -fs 7069
 
