@@ -8,8 +8,14 @@
     subfinder -d hilton.com
     
     sublist3r -d hilton.com
-	--- Поиск доменов по ip
+
+    assetfinder -subs-only example.com >> assetfinder_example.com 
+    
+ 	--- Поиск доменов по ip
     https://dnsdumpster.com/
+
+-uniq -sort
+
 
 # Поиск ссылок из адреса или домена
 
