@@ -4,6 +4,9 @@
     https://spy-soft.net/photon-web-crawler-osint/
 
     - через DNS
+
+ 	dig any site.ru 
+  	dig axfr site.ru @ns.server.com
     
     subfinder -d hilton.com
     
