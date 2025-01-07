@@ -150,6 +150,11 @@ https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
 
 # Заголовки и теги
 
+	# запрос (?) shell.php?cmd=ls
+ 	# обьеденение запросов (&) shell.php?cmd=ls&id=1
+  	# отбросить часть запрроса (# ;) shell.php?cmd=ls#&id=1
+Не забыть кодировку URL
+   
  перенаправления пользователя на другой URL через указанное количество секунд
 	
  	<meta http-equiv="refresh" content="0;http://127.0.0.1:8000"> 
