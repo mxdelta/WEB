@@ -181,6 +181,6 @@ https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
  # Curl
 
  	curl -X POST http://10.10.11.161/api/v1/user/signup -d 'user=ip'
-# Forward shell
+# Forward shell  (htb timing)
 
 	https://github.com/IppSec/forward-shell
