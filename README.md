@@ -24,7 +24,7 @@
 # Разведка поддоменов перебором
 
 	gobuster dns -w word.txt -d hilton.com -i (брут по днс)
-
+	ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -u http://titanic.htb/ -H  "Host:FUZZ.titanic.htb" -fc 301
 # Сортировка повторов
 
 	sort dns_names.txt | uniq
