@@ -1,5 +1,15 @@
 # Разведка поддоменов из свободных ресурсов
-	
+
+	# Вычисление IP и может еще кой чего
+ 	host cyber-ed.ru
+
+   	# Инфо о домене и связанными с ним ресурсами
+    	https://dnsdumpster.com/ 
+
+     	# Инфо о сртах
+      	 https://crt.sh/
+
+ 
  ФОТОН
     https://spy-soft.net/photon-web-crawler-osint/
 
