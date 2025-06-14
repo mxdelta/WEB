@@ -33,8 +33,15 @@
 
 # Разведка поддоменов перебором
 
-	gobuster dns -w word.txt -d hilton.com -i (брут по днс)
+	
 	ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-110000.txt -u http://titanic.htb/ -H  "Host:FUZZ.titanic.htb" -fc 301
+	ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -fs 7069
+ 	gobuster dns -w word.txt -d hilton.com -i (брут по днс)
+  	gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
+
+	
+
+ 
 # Сортировка повторов
 
 	sort dns_names.txt | uniq
@@ -47,9 +54,14 @@
 
 	xurlfind3r -d av.ru -o results
 
-# Брут директрий и доменов
+# Брут директрий
 
 	gobuster dns -w word.txt -d hilton.com -i (брут по днс)
+	
+ 	gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k -u https://watch.streamio.htb/ -x php
+
+	gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10 -x php,html,bak,txt
+
 
 # Пасивный поиск портов на хосте
 
@@ -90,14 +102,6 @@ https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
 утилиты
 
 wpscan --url://192.168.50.200/wordpress/ --wp-content-dir -at -eu  (все директории и все плагины для вордпресс)
-
-gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -k -u https://watch.streamio.htb/ -x php
-
-gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10 -x php,html,bak,txt
-
-gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
-
-ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -fs 7069
 
 
 ---- Брут с автоматической рекурсией
