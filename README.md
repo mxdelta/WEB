@@ -19,6 +19,8 @@
   	dig axfr site.ru @ns.server.com
     
     subfinder -d hilton.com
+	
+ 	subfinder -all -silent -d example.ru | dnsx -a -resp -silent -nc (сортировка живых поддоменов)
     
     sublist3r -d hilton.com
 
