@@ -64,6 +64,11 @@
 
 	gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10 -x php,html,bak,txt
 
+# Брут директорий iis
+
+	IIS Shortname Scanner
+	
+ 	SNS (IIS Shortname)
 
 # Пасивный поиск портов на хосте
 
